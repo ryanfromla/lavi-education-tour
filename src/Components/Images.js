@@ -14,7 +14,7 @@ class Images extends React.Component {
     let source = this.props.source; //store the image source into the a variable
     
     let style = { //style the image's width and margin
-      width: '150px',
+      width: '149px',
       margin: '1px 0 0 1px',
       float: 'left'
       
