@@ -12,8 +12,8 @@ class MainImage extends React.Component {
 
   render() {
     return(
-      <div onClick={() => this.props.history.push('/solution')}>
-      {console.log('what is props', this.props.img)}
+      <div>
+      {/* {console.log('what is props', this.props.img)} */}
         <img src={this.props.img} />
       </div>
     );

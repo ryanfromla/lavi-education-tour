@@ -14,7 +14,7 @@ class Images extends React.Component {
     let source = this.props.source; //store the image source into the a variable
     
     let style = { //style the image's width and margin
-      width: '149px',
+      width: '150px',
       margin: '1px 0 0 1px',
       float: 'left'
       
@@ -26,16 +26,16 @@ class Images extends React.Component {
     return (
   
       <div 
-      onClick={() => this.props.history.push('/solution')}
+      // onClick={() => this.props.history.push('/solution')}
       style={style}>
       
-        {console.log('images props is ', this.props)}
+        {console.log('this images props are ', this.props.history.push)}
         <img 
           className={`img${this.props.id}`}
           // onMouseEnter={() => this.handleMouseEnter()} 
           // onMouseOut={() => this.props.handleMouseExit()}
           // onClick={() => this.props.handleChangeOnClick(this.props.id)} 
-          
+          onClick={() => this.props.history.push('/solution')}
           src={source} style={style} 
           alt="" 
           />

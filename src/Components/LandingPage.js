@@ -48,7 +48,7 @@ class LandingPage extends React.Component {
   render() {
       // {console.log('this is', this.state.allSolutions.content.splice(0,1))}
       // {console.log('history is', this.props)}
-      let width = (this.state.allSolutions.content.length/2 * 150 + 299);
+      let width = (18/2 * 150 + 680);
     return (
       <div className="wrapper" >
         <div className="bookstore"> 
@@ -61,10 +61,8 @@ class LandingPage extends React.Component {
         <div className="carousel">
           <div className="wrapper" style={{width:width+'px'}}>
             <div className="bigImage">
-              
               <MainImage 
-                // onClick={this.props.history.push('/content')}
-                
+                // onClick={() => this.props.history.push('/content')}
                 img={this.state.allSolutions.categories[0].thumbImage}
               />
             </div>
