@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from './image.js';
-import { withRouter } from 'react-router';
+import { withRouter } from 'react-router-dom';
 
 class MainImage extends React.Component {
   constructor(props) {
@@ -12,7 +12,7 @@ class MainImage extends React.Component {
 
   render() {
     return(
-      <div onClick={() => this.props.history.push('/content')}>
+      <div onClick={() => this.props.history.push('/solution')}>
       {console.log('what is props', this.props.img)}
         <img src={this.props.img} />
       </div>

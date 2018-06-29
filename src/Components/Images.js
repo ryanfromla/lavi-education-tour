@@ -1,6 +1,6 @@
 import React from 'react';
 import IndividualSolutionTitle from './IndividualSolutionTitle.js';
-import { withRouter } from 'react-router';
+import { withRouter } from 'react-router-dom';
 
 class Images extends React.Component {
   constructor(props) {
@@ -25,14 +25,17 @@ class Images extends React.Component {
     }
     return (
   
-      <div style={style}>
-        {console.log('images props is ', this.context)}
+      <div 
+      onClick={() => this.props.history.push('/solution')}
+      style={style}>
+      
+        {console.log('images props is ', this.props)}
         <img 
           className={`img${this.props.id}`}
           // onMouseEnter={() => this.handleMouseEnter()} 
           // onMouseOut={() => this.props.handleMouseExit()}
           // onClick={() => this.props.handleChangeOnClick(this.props.id)} 
-          onClick={() => this.props.history.push('/solution')}
+          
           src={source} style={style} 
           alt="" 
           />

@@ -5,7 +5,7 @@ import SolutionNavBar from './SolutionNavBar.js';
 import MainImage from './MainImage.js';
 import App from './app.js';
 import './LandingPage.css';
-import { withRouter } from 'react-router';
+import { withRouter } from 'react-router-dom';
 
 
 class LandingPage extends React.Component {
@@ -48,6 +48,7 @@ class LandingPage extends React.Component {
   render() {
       // {console.log('this is', this.state.allSolutions.content.splice(0,1))}
       // {console.log('history is', this.props)}
+      let width = (18/2 * 150 + 680);
     return (
       <div className="wrapper" >
         <div className="bookstore"> 
@@ -58,7 +59,7 @@ class LandingPage extends React.Component {
         </div>
 
         <div className="carousel">
-          <div className="wrapper">
+          <div className="wrapper" style={{width:width+'px'}}>
             <div className="bigImage">
               
               <MainImage 
@@ -69,7 +70,7 @@ class LandingPage extends React.Component {
             </div>
           
             <div className="smallImages"> 
-              <SolutionNavBar 
+              <SolutionNavBar
                 isHovering={this.state.isHovering}
                 allSolutions={this.state.allSolutions}
                 // handleMouseEnter={this.handleMouseEnter}

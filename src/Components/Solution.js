@@ -4,7 +4,7 @@ import MainImage from './MainImage.js';
 import MainSolutionTitle from './MainSolutionTitle.js';
 import Paragraph from './Paragraph.js';
 import SolutionNavBar from './SolutionNavBar.js';
-import { withRouter } from 'react-router';
+import { withRouter } from 'react-router-dom';
 
 class Solution extends React.Component {
   constructor(props) {
