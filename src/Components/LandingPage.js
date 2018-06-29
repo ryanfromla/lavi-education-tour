@@ -48,7 +48,7 @@ class LandingPage extends React.Component {
   render() {
       // {console.log('this is', this.state.allSolutions.content.splice(0,1))}
       // {console.log('history is', this.props)}
-      let width = (18/2 * 150 + 680);
+      let width = (this.state.allSolutions.content.length/2 * 150 + 299);
     return (
       <div className="wrapper" >
         <div className="bookstore"> 
