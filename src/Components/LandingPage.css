@@ -1,0 +1,22 @@
+.carousel {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+.wrapper {
+  overflow-y: hidden;
+  width: 1900px;
+}
+
+.bigImage  {
+  float: left;
+  margin: 1px 0 0 1px;
+  height: auto;
+  width: 300px; 
+}
+
+
+
+
+
