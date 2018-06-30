@@ -6,8 +6,19 @@ class Images extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-
+      isHovering: false,
     }
+    this.handleChangeOnClick = this.handleChangeOnClick.bind(this);
+  }
+
+  handleChangeOnClick() {
+    this.props.history.push({
+      pathname: '/solution',
+      state: {
+        id: this.props.id
+      }
+    })
+    
   }
 
   render() {
@@ -25,17 +36,14 @@ class Images extends React.Component {
     }
     return (
   
-      <div 
-      // onClick={() => this.props.history.push('/solution')}
-      style={style}>
+      <div style={style}>
       
-        {console.log('this images props are ', this.props.history.push)}
+        {/* {console.log('this images props are ', this.props)} */}
         <img 
           className={`img${this.props.id}`}
           // onMouseEnter={() => this.handleMouseEnter()} 
           // onMouseOut={() => this.props.handleMouseExit()}
-          // onClick={() => this.props.handleChangeOnClick(this.props.id)} 
-          onClick={() => this.props.history.push('/solution')}
+          onClick={() => this.handleChangeOnClick()} 
           src={source} style={style} 
           alt="" 
           />

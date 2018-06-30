@@ -18,7 +18,7 @@ class LandingPage extends React.Component {
       allSolutions: solutions[0],
       bigSolution: 0,
       currSolutions: 7,
-      isHovering: false,
+      
     }
     // this.handleMouseEnter = this.handleMouseEnter.bind(this);
     // this.handleMouseExit = this.handleMouseExit.bind(this);
@@ -38,8 +38,10 @@ class LandingPage extends React.Component {
   //   this.setState({ isHovering: !this.state.isHovering });
   // }
 
-  handleChangeOnClick() {
-    // routes to the solution that was clicked
+  handleChangeOnClick(url) {
+    this.props.history.push('/solution');
+    console.log(url)
+
 
   }
 
@@ -69,22 +71,13 @@ class LandingPage extends React.Component {
           
             <div className="smallImages"> 
               <SolutionNavBar
-                isHovering={this.state.isHovering}
+                
                 allSolutions={this.state.allSolutions}
                 // handleMouseEnter={this.handleMouseEnter}
                 // handleMouseExit={this.handleMouseExit}
                 handleChangeOnClick={this.handleChangeOnClick}
               />
-              {/* {this.state.allSolutions.content.map(solution => {
-                return <Image 
-                  source={solution.content.images[0].path}
-                  key={solution.id}
-                  handleMouseEnter={this.handleMouseEnter}
-                  handleMouseExit={this.handleMouseExit}
-                  handleChangeOnClick={this.handleChangeOnClick}
-                  
-                />
-              })} */}
+              
             </div>
           </div>
 

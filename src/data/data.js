@@ -1,10 +1,11 @@
 //Data Structure
- var solutions = [ 
+var solutions = [ 
 	{
 		"styleSheet":"styleSheet Name",
 		"categories":[
 			{
-				"title":"Bookstore",//Home Page
+        "title":"Bookstore",//Home Page
+        "url": "bookstore",
 				"headerText":"1 This is placeholder header text",
 				"thumbImage":"https://www.lavi.com/upload/CustomFiles/education/img/main.jpg",//Big Image
 				"categoryDescription":{
@@ -40,7 +41,8 @@
 					}
 				}
 			},{
-				"title":"Stadium",
+        "title":"Stadium",
+        "url": "stadium",
 				"headerText":"2 This is placeholder header text",
 				"thumbImage":"name of thumb image",
 				"categoryDescription":{
@@ -116,9 +118,10 @@
 		"content":[ //small images
 			{
         "id": "0",
+        "url": "bookstore",
 				"title":"Solution 1",
 				"description":"description 1",
-				"categories":["Bookstore", "Stadium", "Restaurant"],
+				"categories":["Bookstore"],
 				"homeImage":"name of 1200 x 750 image",
 				"thumbImage":"name of thumb image",
 				"content":{
@@ -128,7 +131,7 @@
 					],
 					"images":[//initially, all images are in right orientation. Secondary and tirnary releases can switch orientations and edit size
 						{
-							"path": 'http://via.placeholder.com/149x149'//,
+							"path": 'https://www.lavi.com/upload/CustomFiles/education/img/Team-Spirit.jpg'//,
 							//"orientation":"left",
 							//"size":{
 							//	"height":"20%",
@@ -157,6 +160,7 @@
 			{
         "id": "1",
         "title":"Solution 2",
+        "url": "digitalsign",
         "description":"description 2",
 				"categories":["Bookstore", "Stadium", "Restaurant"],
 				"homeImage":"name of 1200 x 750 image",
@@ -197,6 +201,7 @@
       {
         "id": "2",
         "title":"Solution 3",
+        "url": "electronicqueue",
         "description":"description 3",
 				"categories":["Bookstore", "Stadium", "Restaurant"],
 				"homeImage":"name of 1200 x 750 image",
@@ -237,6 +242,7 @@
       {
         "id": "3",
         "title":"Solution 4",
+        "url": "inqueue",
         "description":"description 4",
 				"categories":["Bookstore", "Stadium", "Restaurant"],
 				"homeImage":"name of 1200 x 750 image",
@@ -277,6 +283,7 @@
       {
         "id": "4",
         "title":"Solution 5",
+        "url": "instore",
         "description":"description 5",
 				"categories":["Bookstore", "Stadium", "Restaurant"],
 				"homeImage":"name of 1200 x 750 image",
@@ -317,6 +324,7 @@
       {
         "id": "5",
         "title":"Solution 6",
+        "url": "checkoutqueue",
         "description":"description 6",
 				"categories":["Bookstore", "Stadium", "Restaurant"],
 				"homeImage":"name of 1200 x 750 image",
@@ -357,6 +365,7 @@
       {
         "id": "6",
         "title":"Solution 7",
+        "url": "teamspirit",
         "description":"description 7",
 				"categories":["Bookstore", "Stadium", "Restaurant"],
 				"homeImage":"name of 1200 x 750 image",
@@ -397,6 +406,7 @@
       {
         "id": "7",
         "title":"Solution 8",
+        "url": "8",
         "description":"description 8",
 				"categories":["Bookstore", "Stadium", "Restaurant"],
 				"homeImage":"name of 1200 x 750 image",
@@ -437,6 +447,7 @@
       {
         "id": "8",
         "title":"Solution 9",
+        "url": "9",
         "description":"description 9",
 				"categories":["Bookstore", "Stadium", "Restaurant"],
 				"homeImage":"name of 1200 x 750 image",
@@ -477,6 +488,7 @@
       {
         "id": "9",
         "title":"Solution 10",
+        "url": "10",
         "description":"description 10",
 				"categories":["Bookstore", "Stadium", "Restaurant"],
 				"homeImage":"name of 1200 x 750 image",
@@ -517,6 +529,7 @@
       {
         "id": "10",
         "title":"Solution 11",
+        "url": "11",
         "description":"description 11",
 				"categories":["Bookstore", "Stadium", "Restaurant"],
 				"homeImage":"name of 1200 x 750 image",
@@ -557,6 +570,7 @@
       {
         "id": "11",
         "title":"Solution 12",
+        "url": "12",
         "description":"description 12",
 				"categories":["Bookstore", "Stadium", "Restaurant"],
 				"homeImage":"name of 1200 x 750 image",
@@ -597,6 +611,7 @@
       {
         "id": "12",
         "title":"Solution 13",
+        "url": "13",
         "description":"description 13",
 				"categories":["Bookstore", "Stadium", "Restaurant"],
 				"homeImage":"name of 1200 x 750 image",
@@ -637,6 +652,7 @@
       {
         "id": "13",
         "title":"Solution 14",
+        "url": "14",
         "description":"description 14",
 				"categories":["Bookstore", "Stadium", "Restaurant"],
 				"homeImage":"name of 1200 x 750 image",
@@ -677,6 +693,7 @@
       {
         "id": "14",
         "title":"Solution 15",
+        "url": "15",
         "description":"description 15",
 				"categories":["Bookstore", "Stadium", "Restaurant"],
 				"homeImage":"name of 1200 x 750 image",
@@ -717,6 +734,7 @@
       {
         "id": "15",
         "title":"Solution 16",
+        "url": "16",
         "description":"description 16",
 				"categories":["Bookstore", "Stadium", "Restaurant"],
 				"homeImage":"name of 1200 x 750 image",
@@ -757,6 +775,7 @@
       {
         "id": "16",
         "title":"Solution 17",
+        "url": "17",
         "description":"description 17",
 				"categories":["Bookstore", "Stadium", "Restaurant"],
 				"homeImage":"name of 1200 x 750 image",
@@ -797,6 +816,7 @@
       {
         "id": "17",
         "title":"Solution 18",
+        "url": "18",
         "description":"description 18",
 				"categories":["Bookstore", "Stadium", "Restaurant"],
 				"homeImage":"name of 1200 x 750 image",

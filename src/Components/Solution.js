@@ -10,7 +10,7 @@ class Solution extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      currentSolution: solutions[0].content[0],
+      currentSolution: solutions[0].content[this.props.location.state.id],
       allSolutions: solutions[0],
       isHovering: false,
       hoverSolutionID: '',
@@ -43,7 +43,7 @@ class Solution extends React.Component {
     return (
 
       <div className="container">
-      {console.log('im in solution, my props are ', this.props)}
+      {console.log('im in solution, my props are ', this.props.location)}
         <div className="row">
           <div className="col-md-12 text-center top-images" style={style}>
             <SolutionNavBar 
@@ -52,31 +52,15 @@ class Solution extends React.Component {
               handleMouseEnter={this.handleMouseEnter} 
               handleMouseExit={this.handleMouseExit}
               handleChangeOnClick={this.handleChangeOnClick}
-            />
-            {/* {this.state.allSolutions.content.map(solution => {
-             return <Image  
-              title={solution.title}
-              description={solution.description}
-              isHovering={this.state.isHovering}
-              handleMouseEnter={this.handleMouseEnter}
-              handleMouseExit={this.handleMouseExit}
-              handleChangeOnClick={this.handleChangeOnClick} 
-              id={solution.id} 
-              source={solution.content.images[0].path} 
-              key={solution.id} />
-           })} */}
-            
+            />          
           </div>
-          
         </div>
         <div>
             CURRENT SOLUTION IMAGE:
             <MainImage img={this.state.currentSolution.content.images[0].path} />
-
           </div>
           <div className="title" >
             CURRENT SOLUTION TITLE: 
-            
             <MainSolutionTitle title={this.state.currentSolution.title} />
           </div>
           <div>

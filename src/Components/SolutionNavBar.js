@@ -24,7 +24,7 @@ class SolutionNavBar extends React.Component {
             key={solution.id} 
             title={solution.title}
             description={solution.description}
-            isHovering={this.props.isHovering}
+            url={solution.url}
             handleMouseEnter={this.props.handleMouseEnter}
             handleMouseExit={this.props.handleMouseExit}
             handleChangeOnClick={this.props.handleChangeOnClick} 
