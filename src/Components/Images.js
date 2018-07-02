@@ -5,26 +5,28 @@ import { withRouter } from 'react-router-dom';
 class Images extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      isHovering: false,
-    }
-    this.handleChangeOnClick = this.handleChangeOnClick.bind(this);
+    this.handleChangeOnClickOnImage = this.handleChangeOnClickOnImage.bind(this);
   }
 
-  handleChangeOnClick() {
-    this.props.history.push({
-      pathname: '/solution',
-      state: {
-        id: this.props.id
-      }
-    })
+  handleChangeOnClickOnImage() {
+    this.props.handleChangeOnClick(this.props.id);
+    this.props.history.push(`/solutions/${this.props.url}`);
+    this.props.changeClassNameToHide();
+
+    let x = document.getElementsByClassName('content-image')
+    console.log(x)
+    // while (x && x.length) {
+    //   x[0].className += 'inactive';
+    // }
+
+    // document.getElementById(this.props.title).classList.remove('inactive')
+    // document.getElementById(this.props.title).classList.add('active');
     
   }
 
   render() {
-    let source = this.props.source; //store the image source into the a variable
     
-    let style = { //style the image's width and margin
+    let style = { 
       width: '150px',
       margin: '1px 0 0 1px',
       float: 'left'
@@ -35,25 +37,18 @@ class Images extends React.Component {
       display: 'inline'
     }
     return (
-  
       <div style={style}>
-      
-        {/* {console.log('this images props are ', this.props)} */}
-        <img 
-          className={`img${this.props.id}`}
-          // onMouseEnter={() => this.handleMouseEnter()} 
-          // onMouseOut={() => this.props.handleMouseExit()}
-          onClick={() => this.handleChangeOnClick()} 
-          src={source} style={style} 
+        <img
+          id={this.props.title}
+          className='content-image'
+          onClick={() => this.handleChangeOnClickOnImage()} 
+          src={this.props.source} style={style} 
           alt="" 
           />
-  
+          
+          {/* THIS span tag contains each image's description */}
           <span> {this.props.description} </span>
-          {/* {this.state.isMouseInside ? (
-            <span> {this.props.description} </span>
-          ) : (
-            null
-          )} */}
+
         <div style={titleStyle}>
           <IndividualSolutionTitle  title={this.props.title} />
         </div>

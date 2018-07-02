@@ -1,20 +1,23 @@
 import React from 'react';
-import Image from './image.js';
 import { withRouter } from 'react-router-dom';
 
 class MainImage extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      
-    }
+  }
+
+  handleMainImageClick() {
+    this.props.changeClassNameToShow();
+    this.props.history.push('/');
   }
 
   render() {
     return(
       <div>
-      {/* {console.log('what is props', this.props.img)} */}
-        <img src={this.props.img} />
+        <img 
+          src={this.props.img} 
+          onClick={() => this.handleMainImageClick()}
+        />
       </div>
     );
   }
