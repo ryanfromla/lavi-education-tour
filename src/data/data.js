@@ -1,6 +1,70 @@
 //Data Structure
 var solutions = [ 
 	{
+		"homePage":[
+			{
+				"text":{
+					"position":"absolute",
+					"left":"200px",
+					"color":"gray",
+					"title":"Queue Management and Crowd Control Systems Across the Campus Environment",
+					"headerText":"Lorem Ipsum dolor sit amet..."
+				},
+				"background":{
+					"image":"http://via.placeholder.com/1920x450",
+					"styles":{
+						"width":"100%",
+						"height":"450px"
+					}
+				}
+			},{
+				"text":{
+					"position":"absolute",
+					"left":"200px",
+					"color":"gray",
+					"title":"Queue Management and Crowd Control Systems Across the Campus Environment",
+					"headerText":"Lorem Ipsum dolor sit amet..."
+				},
+				"background":{
+					"image":"http://via.placeholder.com/1920x450",
+					"styles":{
+						"width":"100%",
+						"height":"450px"
+					}
+				}
+			},{
+				"points":[
+					{
+						"category":"Bookstore",
+						"left":"50%",
+						"top":"50%"
+					},{
+						"category":"Stadium",
+						"left":"90%",
+						"top":"75%"
+					},{
+						"category":"Restaurant",
+						"left":"80%",
+						"top":"50%"
+					}
+				],
+				"background":{
+					"image":"http://via.placeholder.com/1920x450",
+					"styles":{
+						"width":"100%",
+						"height":"450px"
+					}
+				}
+			},
+			"form":{
+				"link":"pardot address",
+				"fields":{
+					"name":"your name",//default for user
+					"email":"you@example.com",//default for user
+					"industry":"education"//defaulted, hidden from user
+				}
+			}
+		],
 		"styleSheet":"styleSheet Name",
 		"categories":[
 			{
