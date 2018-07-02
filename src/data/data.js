@@ -186,8 +186,13 @@ var solutions = [
 				"title":"Solution 1",
 				"description":"description 1",
 				"categories":["Bookstore"],
+<<<<<<< HEAD
 				"homeImage":"http://ponyzone.us/wp-content/uploads/2018/01/bathroom-led-light-fixtures-over-mirror-house-decorations-regarding-proportions-1200-x-750.jpg",
 				"thumbImage":"https://www.lavi.com/upload/CustomFiles/education/img/Team-Spirit.jpg",
+=======
+				"homeImage":"http://via.placeholder.com/1200x750",
+				"thumbImage":"http://via.placeholder.com/149x149",
+>>>>>>> 55d073bb92e0cd77b87d5a9133a47bc78242b771
 				"content":{
 					"paragraphs":[
 						`This is the first paragraph for Solution 1. Add list elements later`,
@@ -227,8 +232,13 @@ var solutions = [
 		"url": "digitalsign",
 		"description":"description 2",
 				"categories":["Bookstore", "Stadium", "Restaurant"],
+<<<<<<< HEAD
 				"homeImage":"https://www.ionaudio.com/tradeshows/CES2018/img/web/KaraokeRocker_web.jpg",
 				"thumbImage":"https://www.lavi.com/upload/CustomFiles/education/img/Digital-Sign.jpg",
+=======
+				"homeImage":"http://via.placeholder.com/1200x750",
+				"thumbImage":"../img/In-store.jpg",
+>>>>>>> 55d073bb92e0cd77b87d5a9133a47bc78242b771
 				"content":{
 					"paragraphs":[
 						"This is the first paragraph for Solution 2. Add list elements later",
@@ -268,8 +278,13 @@ var solutions = [
 		"url": "electronicqueue",
 		"description":"description 3",
 				"categories":["Bookstore", "Stadium", "Restaurant"],
+<<<<<<< HEAD
 				"homeImage":"https://www.ionaudio.com/tradeshows/CES2018/img/web/Pathfinder_web.jpg",
 				"thumbImage":"https://www.lavi.com/upload/CustomFiles/education/img/Electronic-Queuing.jpg",
+=======
+				"homeImage":"http://via.placeholder.com/1200x750",
+				"thumbImage":"../img/In-store.jpg",
+>>>>>>> 55d073bb92e0cd77b87d5a9133a47bc78242b771
 				"content":{
 					"paragraphs":[
 						"This is the first paragraph for Solution 3. Add list elements later",
@@ -309,8 +324,13 @@ var solutions = [
 		"url": "inqueue",
 		"description":"description 4",
 				"categories":["Bookstore", "Stadium", "Restaurant"],
+<<<<<<< HEAD
 				"homeImage":"https://www.ionaudio.com/tradeshows/CES2018/img/web/Stadium_web.jpg",
 				"thumbImage":"https://www.lavi.com/upload/CustomFiles/education/img/in-queue.jpg",
+=======
+				"homeImage":"http://via.placeholder.com/1200x750",
+				"thumbImage":"../img/In-store.jpg",
+>>>>>>> 55d073bb92e0cd77b87d5a9133a47bc78242b771
 				"content":{
 					"paragraphs":[
 						"This is the first paragraph for Solution 4. Add list elements later",
@@ -350,8 +370,13 @@ var solutions = [
 		"url": "instore",
 		"description":"description 5",
 				"categories":["Bookstore", "Stadium", "Restaurant"],
+<<<<<<< HEAD
 				"homeImage":"https://www.ionaudio.com/tradeshows/CES2018/img/web/Pro80BT_web.jpg",
 				"thumbImage":"https://www.lavi.com/upload/CustomFiles/education/img/in-store.jpg",
+=======
+				"homeImage":"http://via.placeholder.com/1200x750",
+				"thumbImage":"../img/In-store.jpg",
+>>>>>>> 55d073bb92e0cd77b87d5a9133a47bc78242b771
 				"content":{
 					"paragraphs":[
 						"This is the first paragraph for Solution 5. Add list elements later",
@@ -391,8 +416,13 @@ var solutions = [
 		"url": "checkoutqueue",
 		"description":"description 6",
 				"categories":["Bookstore", "Stadium", "Restaurant"],
+<<<<<<< HEAD
 				"homeImage":"https://www.ionaudio.com/tradeshows/CES2018/img/web/Raptor_web.jpg",
 				"thumbImage":"https://www.lavi.com/upload/CustomFiles/education/img/Checkout-Queue.jpg",
+=======
+				"homeImage":"http://via.placeholder.com/1200x750",
+				"thumbImage":"../img/In-store.jpg",
+>>>>>>> 55d073bb92e0cd77b87d5a9133a47bc78242b771
 				"content":{
 					"paragraphs":[
 						"This is the first paragraph for Solution 6. Add list elements later",
@@ -432,8 +462,13 @@ var solutions = [
 		"url": "teamspirit",
 		"description":"description 7",
 				"categories":["Bookstore", "Stadium", "Restaurant"],
+<<<<<<< HEAD
 				"homeImage":"https://i.ytimg.com/vi/PgRbMlG1bdw/maxresdefault.jpg",
 				"thumbImage":"https://www.lavi.com/upload/CustomFiles/education/img/Team-Spirit.jpg",
+=======
+				"homeImage":"http://via.placeholder.com/1200x750",
+				"thumbImage":"../img/In-store.jpg",
+>>>>>>> 55d073bb92e0cd77b87d5a9133a47bc78242b771
 				"content":{
 					"paragraphs":[
 						"This is the first paragraph for Solution 7. Add list elements later",
@@ -473,8 +508,13 @@ var solutions = [
 		"url": "8",
 		"description":"description 8",
 				"categories":["Bookstore", "Stadium", "Restaurant"],
+<<<<<<< HEAD
 				"homeImage":"http://www.oasisgroup.it/wp-content/uploads/2016/03/Private_apartment_in_Moscow_02-1200x750.jpg",
 				"thumbImage":"https://www.lavi.com/upload/CustomFiles/education/img/Digital-Sign.jpg",
+=======
+				"homeImage":"http://via.placeholder.com/1200x750",
+				"thumbImage":"../img/In-store.jpg",
+>>>>>>> 55d073bb92e0cd77b87d5a9133a47bc78242b771
 				"content":{
 					"paragraphs":[
 						"This is the first paragraph for Solution 7. Add list elements later",
@@ -514,8 +554,13 @@ var solutions = [
 		"url": "9",
 		"description":"description 9",
 				"categories":["Bookstore", "Stadium", "Restaurant"],
+<<<<<<< HEAD
 				"homeImage":"http://heatherjensen.info/wp-content/uploads/2017/12/view-larger-1faf49f5-3ca9-4ed9-8f75-4153b4a7f2aa-view-larger-regarding-size-1200-x-750.jpg",
 				"thumbImage":"https://www.lavi.com/upload/CustomFiles/education/img/Electronic-Queuing.jpg",
+=======
+				"homeImage":"http://via.placeholder.com/1200x750",
+				"thumbImage":"../img/In-store.jpg",
+>>>>>>> 55d073bb92e0cd77b87d5a9133a47bc78242b771
 				"content":{
 					"paragraphs":[
 						"This is the first paragraph for Solution 7. Add list elements later",
@@ -555,8 +600,13 @@ var solutions = [
 		"url": "10",
 		"description":"description 10",
 				"categories":["Bookstore", "Stadium", "Restaurant"],
+<<<<<<< HEAD
 				"homeImage":"https://blog.westerndigital.com/wp-content/uploads/2018/03/Ultrastar_DC_HC320-1200x750.jpg",
 				"thumbImage":"https://www.lavi.com/upload/CustomFiles/education/img/in-store.jpg",
+=======
+				"homeImage":"http://via.placeholder.com/1200x750",
+				"thumbImage":"../img/In-store.jpg",
+>>>>>>> 55d073bb92e0cd77b87d5a9133a47bc78242b771
 				"content":{
 					"paragraphs":[
 						"This is the first paragraph for Solution 7. Add list elements later",
@@ -596,8 +646,13 @@ var solutions = [
 		"url": "11",
 		"description":"description 11",
 				"categories":["Bookstore", "Stadium", "Restaurant"],
+<<<<<<< HEAD
 				"homeImage":"http://www.plasticbionic.com/wp-content/uploads/Sifa_CGI_GraphicDesign_Illustration_1-1200x750.jpg",
 				"thumbImage":"https://www.lavi.com/upload/CustomFiles/education/img/in-queue.jpg",
+=======
+				"homeImage":"http://via.placeholder.com/1200x750",
+				"thumbImage":"../img/In-store.jpg",
+>>>>>>> 55d073bb92e0cd77b87d5a9133a47bc78242b771
 				"content":{
 					"paragraphs":[
 						"This is the first paragraph for Solution 7. Add list elements later",
@@ -637,8 +692,13 @@ var solutions = [
 		"url": "12",
 		"description":"description 12",
 				"categories":["Bookstore", "Stadium", "Restaurant"],
+<<<<<<< HEAD
 				"homeImage":"http://pickupyourdreams.com/wp-content/uploads/2015/04/BG-jump-1200x750.jpg",
 				"thumbImage":"https://www.lavi.com/upload/CustomFiles/education/img/Team-Spirit.jpg",
+=======
+				"homeImage":"http://via.placeholder.com/1200x750",
+				"thumbImage":"../img/In-store.jpg",
+>>>>>>> 55d073bb92e0cd77b87d5a9133a47bc78242b771
 				"content":{
 					"paragraphs":[
 						"This is the first paragraph for Solution 7. Add list elements later",
@@ -678,8 +738,13 @@ var solutions = [
 		"url": "13",
 		"description":"description 13",
 				"categories":["Bookstore", "Stadium", "Restaurant"],
+<<<<<<< HEAD
 				"homeImage":"http://beyond2000.com.au/wp-content/uploads/2017/02/oversize-double-garage-render-1200x750.jpg",
 				"thumbImage":"https://www.lavi.com/upload/CustomFiles/education/img/Digital-Sign.jpg",
+=======
+				"homeImage":"http://via.placeholder.com/1200x750",
+				"thumbImage":"../img/In-store.jpg",
+>>>>>>> 55d073bb92e0cd77b87d5a9133a47bc78242b771
 				"content":{
 					"paragraphs":[
 						"This is the first paragraph for Solution 7. Add list elements later",
@@ -719,8 +784,13 @@ var solutions = [
 		"url": "14",
 		"description":"description 14",
 				"categories":["Bookstore", "Stadium", "Restaurant"],
+<<<<<<< HEAD
 				"homeImage":"http://www.indiefilipino.com/wp-content/uploads/cache-c314ea1135d7c5d160e3a9c9e3c28d65/2013/10/Phuket-Island-beach-wallpaper-Thailand-1200x750.jpg",
 				"thumbImage":"https://www.lavi.com/upload/CustomFiles/education/img/in-store.jpg",
+=======
+				"homeImage":"http://via.placeholder.com/1200x750",
+				"thumbImage":"../img/In-store.jpg",
+>>>>>>> 55d073bb92e0cd77b87d5a9133a47bc78242b771
 				"content":{
 					"paragraphs":[
 						"This is the first paragraph for Solution 7. Add list elements later",
@@ -760,8 +830,13 @@ var solutions = [
 		"url": "15",
 		"description":"description 15",
 				"categories":["Bookstore", "Stadium", "Restaurant"],
+<<<<<<< HEAD
 				"homeImage":"http://www.passenger6a.com/wp-content/uploads/2017/05/nobu-crystal-cruises-1-1200x750.jpg",
 				"thumbImage":"https://www.lavi.com/upload/CustomFiles/education/img/Checkout-Queue.jpg",
+=======
+				"homeImage":"http://via.placeholder.com/1200x750",
+				"thumbImage":"../img/In-store.jpg",
+>>>>>>> 55d073bb92e0cd77b87d5a9133a47bc78242b771
 				"content":{
 					"paragraphs":[
 						"This is the first paragraph for Solution 7. Add list elements later",
@@ -801,8 +876,13 @@ var solutions = [
 		"url": "16",
 		"description":"description 16",
 				"categories":["Bookstore", "Stadium", "Restaurant"],
+<<<<<<< HEAD
 				"homeImage":"http://www.plasticbionic.com/wp-content/uploads/75_CHRISTMAS_Illustration_4-1200x750.jpg",
 				"thumbImage":"https://www.lavi.com/upload/CustomFiles/education/img/Digital-Sign.jpg",
+=======
+				"homeImage":"http://via.placeholder.com/1200x750",
+				"thumbImage":"../img/In-store.jpg",
+>>>>>>> 55d073bb92e0cd77b87d5a9133a47bc78242b771
 				"content":{
 					"paragraphs":[
 						"This is the first paragraph for Solution 7. Add list elements later",
@@ -842,8 +922,13 @@ var solutions = [
 		"url": "17",
 		"description":"description 17",
 				"categories":["Bookstore", "Stadium", "Restaurant"],
+<<<<<<< HEAD
 				"homeImage":"http://www.plasticbionic.com/wp-content/uploads/2014/03/India_Illustration_CGI-1200x750.jpg",
 				"thumbImage":"https://www.lavi.com/upload/CustomFiles/education/img/Electronic-Queuing.jpg",
+=======
+				"homeImage":"http://via.placeholder.com/1200x750",
+				"thumbImage":"../img/In-store.jpg",
+>>>>>>> 55d073bb92e0cd77b87d5a9133a47bc78242b771
 				"content":{
 					"paragraphs":[
 						"This is the first paragraph for Solution 7. Add list elements later",
@@ -883,8 +968,13 @@ var solutions = [
 		"url": "18",
 		"description":"description 18",
 				"categories":["Bookstore", "Stadium", "Restaurant"],
+<<<<<<< HEAD
 				"homeImage":"http://www.sapeloweekendatbernies.com/wp-content/uploads/2015/05/RJ-Reynolds-Mansion-1200-x-750.png",
 				"thumbImage":"https://www.lavi.com/upload/CustomFiles/education/img/in-queue.jpg",
+=======
+				"homeImage":"http://via.placeholder.com/1200x750",
+				"thumbImage":"../img/In-store.jpg",
+>>>>>>> 55d073bb92e0cd77b87d5a9133a47bc78242b771
 				"content":{
 					"paragraphs":[
 						"This is the first paragraph for Solution 7. Add list elements later",
