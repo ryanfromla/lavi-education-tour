@@ -1,7 +1,5 @@
 import React from 'react';
-
 import Images from './Images.js';
-import { withRouter } from 'react-router';
 
 class SolutionNavBar extends React.Component {
   constructor(props) {
