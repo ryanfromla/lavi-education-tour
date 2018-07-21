@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
-
 import { solutions } from './data/data.js';
 import Solution from './Components/Solution.js';
 import SolutionNavBarWrapper from './Components/SolutionNavBarWrapper.js';
@@ -36,14 +35,14 @@ class App extends Component {
   }
 
   render() {
-
-    let filter="Bookstore";
+    let filter = "Bookstore";
 
     return (
       <div>
-        <div className="show"> 
+        <div className="show">
           Bookstore
         </div>
+
         <div className="show">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </div>
@@ -66,24 +65,25 @@ class App extends Component {
         }).map((content, index) => {
           return <Route
                     key={index}
-                    exact path={`/solutions/${content.url}`}
+                    exact path={`/${content.url}`}
                     render={(props) => <Solution {...props} currentSolution={content} />}
                   />
         })}
 
-
         {/* {this.state.solutions.categories.filter(category => {
           category.title == filter;
         }).map(category => {
-          return <Route 
-                    exact path={`/solutions/${category.title}`}
+          return <Route
+                    exact path={`/${category.title}`}
                     render={(props) => <Solution {...props}  />}
                   />
         })} */}
-
+        {/* <Route exact path="/" component={Home} /> */}
         {/* <Route path='/' component={App} /> */}
       </Switch>
+
       </div>
+
     );
   }
 }

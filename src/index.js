@@ -1,14 +1,26 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
-import { BrowserRouter } from 'react-router-dom';
+import app from './server';
+import http from 'http';
 
-ReactDOM.render(
-  <BrowserRouter>
-    <App/>
-  </BrowserRouter>, 
-  document.getElementById('root'));
-registerServiceWorker();
+const server = http.createServer(app);
 
+let currentApp = app;
+
+server.listen(process.env.PORT || 3000, error => {
+  if (error) {
+    console.log(error);
+  }
+
+  console.log('🚀 started');
+});
+
+if (module.hot) {
+  console.log('✅  Server-side HMR Enabled!');
+
+  module.hot.accept('./server', () => {
+    console.log('🔁  HMR Reloading `./server`...');
+    server.removeListener('request', currentApp);
+    const newApp = require('./server').default;
+    server.on('request', newApp);
+    currentApp = newApp;
+  });
+}
