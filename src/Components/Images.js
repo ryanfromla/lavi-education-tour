@@ -10,7 +10,7 @@ class Images extends React.Component {
 
   handleChangeOnClickOnImage() {
     this.props.handleChangeOnClick(this.props.id);
-    this.props.history.push(`/solutions/${this.props.url}`);
+    this.props.history.push(`/${this.props.url}`);
     this.props.changeClassNameToHide();
 
     let x = document.getElementsByClassName('content-image')

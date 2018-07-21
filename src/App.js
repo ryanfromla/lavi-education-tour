@@ -65,7 +65,7 @@ class App extends Component {
         }).map((content, index) => {
           return <Route
                     key={index}
-                    exact path={`/solutions/${content.url}`}
+                    exact path={`/${content.url}`}
                     render={(props) => <Solution {...props} currentSolution={content} />}
                   />
         })}
@@ -74,7 +74,7 @@ class App extends Component {
           category.title == filter;
         }).map(category => {
           return <Route
-                    exact path={`/solutions/${category.title}`}
+                    exact path={`/${category.title}`}
                     render={(props) => <Solution {...props}  />}
                   />
         })} */}
