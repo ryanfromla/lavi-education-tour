@@ -34,7 +34,7 @@ class App extends Component {
 
   handleChangeOnClick(id) {
     let isDetailPage = false;
-    console.log('click', solutions[0].content[id]);
+    // console.log('click', solutions[0].content[id]);
     if (solutions[0].content[id] === undefined) {
       isDetailPage = false;
     } else {
@@ -47,7 +47,10 @@ class App extends Component {
   }
 
   goToLandingPage() {
-
+    let items = Object.assign({}, this.state);
+    items.currentSolution = undefined;
+    items.isDetailPage = false;
+    this.setState(items);
   }
 
   render() {

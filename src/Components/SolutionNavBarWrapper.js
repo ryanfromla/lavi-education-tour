@@ -14,8 +14,9 @@ class SolutionNavBarWrapper extends React.Component {
     let width = ((18/2 * 150) + 300);
 
     return (
-      <div className="SolutionNavBarWrapper carousel ">
-        <div className="wrapper" style={{width:width+'px'}}>
+      <div className="SolutionNavBarWrapper carousel " style={{width:width+'px'}}>
+        <div className="carousel-button button-right">l</div>
+        <div className="wrapper">
           <div className="bigImage">
             <MainImage
               img={this.props.allSolutions.categories[0].thumbImage}
@@ -32,6 +33,7 @@ class SolutionNavBarWrapper extends React.Component {
             />
           </div>
         </div>
+        <div className="carousel-button button-right">r</div>
       </div>
     );
   }

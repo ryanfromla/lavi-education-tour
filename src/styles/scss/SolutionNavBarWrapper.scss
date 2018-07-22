@@ -1,17 +1,20 @@
 @import './globals/vars.scss';
 @import './globals/mixins.scss';
 .SolutionNavBarWrapper {
+  display: inline-flex;
+  flex-direction: row;
+  background-color: $darkGray;
+
+
   &.carousel {
-    overflow-x: scroll;
     overflow-y: hidden;
     -webkit-overflow-scrolling: touch;
-    max-height: 400px;
   }
 
   .wrapper {
     overflow-y: hidden;
     background-color: $white;
-    /* width: 2030px;  */
+    margin: 0px 140px;
   }
 
   .smallImages {
@@ -24,4 +27,13 @@
     height: $bigImageSize;
     width: $bigImageSize;
   }
+
+  .carousel-button {
+    margin: auto 10px;
+    color: $white;
+    &.button-left {
+      align-self: flex-start;
+    }
+  }
+
 }

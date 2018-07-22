@@ -4,6 +4,7 @@
 .App {
   max-width: 1440px;
   font-family: $fontFamily;
+  font-weight: 300;
 
   .landing-page-header {
     margin: 30px 140px;
@@ -30,11 +31,11 @@
   .breadcrumb {
     @include fluid-type(12px, 14px);
     padding: 10px 140px;
-  }
 
-  .nav-bar {
-    background-color: $darkGray;
-    padding: 0px 140px;
+    a {
+      text-decoration: underline;
+      cursor: pointer;
+    }
   }
 
   .landing-page-content {
