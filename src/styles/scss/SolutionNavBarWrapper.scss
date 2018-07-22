@@ -4,7 +4,7 @@
   display: inline-flex;
   flex-direction: row;
   background-color: $darkGray;
-
+  width: 1440px;
 
   &.carousel {
     overflow-y: hidden;
@@ -27,12 +27,22 @@
     height: $bigImageSize;
     width: $bigImageSize;
   }
-
+  .scroll-arrow {
+    position: absolute;
+    margin-top: 50px;
+    color: $white;
+  }
   .carousel-button {
-    margin: auto 10px;
+
     color: $white;
     &.button-left {
+      margin: auto -120px auto 120px;
       align-self: flex-start;
+      text-align: right;
+    }
+    &.button-right {
+      margin: auto 120px auto -120px;
+
     }
   }
 

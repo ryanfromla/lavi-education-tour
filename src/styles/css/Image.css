@@ -3,28 +3,28 @@
 /* Scalable padding, all positions */
 /* Scalable margins */
 .Images {
-  width: 150px;
-  height: 150px;
+  width: 250px;
+  height: 250px;
   margin: 2px 2px;
   background-color: #FFFFFF; }
   .Images img {
-    width: 150px;
-    height: 150px; }
+    width: 250px;
+    height: 250px; }
   .Images .overlay {
     position: relative;
-    height: 150px;
-    width: 150px;
-    margin: -150px 0 0 0; }
+    width: 250px;
+    height: 250px;
+    margin: -250px 0 0 0; }
   .Images .image-title {
     background: rgba(0, 0, 0, 0.5);
     color: #FFFFFF;
     z-index: 100;
-    margin: 110px 0px 0 0px;
+    margin: calc(250px - 40px) 0px 0 0px;
     font-size: calc(12px + 2 * ( (100vw - 420px) / 580));
     font-weight: 300;
     text-align: center;
     z-index: 200;
-    width: 150px;
+    width: 250px;
     height: 35px;
     line-height: 35px; }
     @media screen and (max-width: 420px) {

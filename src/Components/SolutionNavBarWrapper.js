@@ -11,26 +11,29 @@ class SolutionNavBarWrapper extends React.Component {
   }
 
   render() {
-    let width = ((18/2 * 150) + 300);
+    let width = ((18/2 * 250) + 290);
 
     return (
-      <div className="SolutionNavBarWrapper carousel " style={{width:width+'px'}}>
-        <div className="carousel-button button-right">l</div>
+      <div className="SolutionNavBarWrapper carousel">
+        <div className="carousel-button button-left">l</div>
         <div className="wrapper">
-          <div className="bigImage">
-            <MainImage
-              img={this.props.allSolutions.categories[0].thumbImage}
-              changeClassNameToShow={this.props.changeClassNameToShow}
-              handleChangeOnClick={this.props.handleChangeOnClick}
-            />
-          </div>
-          <div className="smallImages">
-            <SolutionNavBar
-              allSolutions={this.props.allSolutions}
-              changeClassNameToHide={this.props.changeClassNameToHide}
-              handleChangeOnClick={this.props.handleChangeOnClick}
-              toggleDivClassName={this.props.toggleDivClassName}
-            />
+          <div className="scroll-arrow">a</div>
+          <div className="scroll"  style={{width:width+'px'}}>
+            <div className="bigImage">
+              <MainImage
+                img={this.props.allSolutions.categories[0].thumbImage}
+                changeClassNameToShow={this.props.changeClassNameToShow}
+                handleChangeOnClick={this.props.handleChangeOnClick}
+              />
+            </div>
+            <div className="smallImages">
+              <SolutionNavBar
+                allSolutions={this.props.allSolutions}
+                changeClassNameToHide={this.props.changeClassNameToHide}
+                handleChangeOnClick={this.props.handleChangeOnClick}
+                toggleDivClassName={this.props.toggleDivClassName}
+              />
+            </div>
           </div>
         </div>
         <div className="carousel-button button-right">r</div>

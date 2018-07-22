@@ -5,7 +5,8 @@
 .SolutionNavBarWrapper {
   display: inline-flex;
   flex-direction: row;
-  background-color: #333B4C; }
+  background-color: #333B4C;
+  width: 1440px; }
   .SolutionNavBarWrapper.carousel {
     overflow-y: hidden;
     -webkit-overflow-scrolling: touch; }
@@ -14,16 +15,23 @@
     background-color: #FFFFFF;
     margin: 0px 140px; }
   .SolutionNavBarWrapper .smallImages {
-    max-height: 300px; }
+    max-height: 500px; }
   .SolutionNavBarWrapper .bigImage, .SolutionNavBarWrapper .bigImage img {
     float: left;
     margin: 2px 4px 2px 2px;
-    height: 300px;
-    width: 300px; }
+    height: 500px;
+    width: 500px; }
+  .SolutionNavBarWrapper .scroll-arrow {
+    position: absolute;
+    margin-top: 50px;
+    color: #FFFFFF; }
   .SolutionNavBarWrapper .carousel-button {
-    margin: auto 10px;
     color: #FFFFFF; }
     .SolutionNavBarWrapper .carousel-button.button-left {
-      align-self: flex-start; }
+      margin: auto -120px auto 120px;
+      align-self: flex-start;
+      text-align: right; }
+    .SolutionNavBarWrapper .carousel-button.button-right {
+      margin: auto 120px auto -120px; }
 
 /*# sourceMappingURL=SolutionNavBarWrapper.css.map */
