@@ -14,9 +14,8 @@
   .wrapper {
     overflow-y: hidden;
     background-color: $white;
-    margin: 0px 140px;
+    margin: 0px $sideMargin;
   }
-
 
   .bigImage, .bigImage img {
     float: left;

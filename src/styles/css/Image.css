@@ -51,5 +51,20 @@
     @media screen and (min-width: 1000px) {
       .Images .image-description {
         font-size: 12px; } }
+  .Images.small-image {
+    width: 150px;
+    height: 150px; }
+    .Images.small-image .overlay,
+    .Images.small-image img {
+      width: 150px;
+      height: 150px; }
+    .Images.small-image .overlay {
+      margin: -150px 0 0 0; }
+    .Images.small-image .image-title {
+      top: calc(150px - 40px);
+      width: 150px; }
+    .Images.small-image .image-description {
+      width: 150px;
+      max-height: calc(150px - 20%); }
 
 /*# sourceMappingURL=Image.css.map */

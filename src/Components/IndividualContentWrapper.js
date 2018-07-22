@@ -14,30 +14,28 @@ class IndividualContentWrapper extends React.Component {
 
     return (
       <div className='IndividualContentWrapper'>
-        <div>
-          CURRENT SOLUTION IMAGE:
+        <div className="solution-image">
           <img src={this.props.currentSolution.homeImage} />
         </div>
-        <div>
-          CURRENT SOLUTION TITLE:
+        <div className="solution-title">
           <MainSolutionTitle title={this.props.currentSolution.title} />
         </div>
 
         {/* Map paragraphs for single solution and return Paragraph components */}
         {this.props.currentSolution.content.paragraphs.map((paragraph, index) => {
           return <div key={index} className='paragraph'>
-                    Paragraph Number: {index}
                     <Paragraph text={paragraph} />
                   </div>
         })}
 
-        {/* Map paragraphs for single solution and return <imgs> wrapped in <divs> */}
-        {this.props.currentSolution.content.images.map((image, index) => {
-          return <div key={index} className='content-images'>
-                    Image Number : {index}
-                    <img src={image.path} />
-                  </div>
-        })}
+        <div classname="content-images">
+          {/* Map paragraphs for single solution and return <imgs> wrapped in <divs> */}
+          {this.props.currentSolution.content.images.map((image, index) => {
+            return <div key={index} className='content-image'>
+                      <img src={image.path} />
+                    </div>
+          })}
+        </div>
       </div>
     );
   }

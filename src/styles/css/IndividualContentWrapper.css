@@ -1,4 +1,11 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800);
+/* Scalable padding */
+/* Scalable padding, all positions */
+/* Scalable margins */
 .IndividualContentWrapper {
-  margin: 30 140px; }
+  margin: 0px 0px; }
+  .IndividualContentWrapper .solution-image {
+    max-width: 900px;
+    height: 760px; }
 
 /*# sourceMappingURL=IndividualContentWrapper.css.map */

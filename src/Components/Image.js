@@ -26,8 +26,7 @@ class Image extends React.Component {
 
   render() {
     return (
-      <div className="Images">
-
+      <div className={`Images ${this.props.isDetailPage ? 'small-image' : 'large-image'}`}>
         <img
           id={this.props.title}
           className='content-image'

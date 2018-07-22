@@ -1,3 +1,20 @@
+@import './globals/vars.scss';
+@import './globals/mixins.scss';
+
 .IndividualContentWrapper {
-  margin: 30 140px;
+  margin: 0px 0px;
+  .solution-title {
+
+  }
+  .solution-image {
+    max-width: 900px;
+    height: $solutionImageHeight;
+
+  }
+  .paragraph {
+
+  }
+  .content-images {
+
+  }
 }

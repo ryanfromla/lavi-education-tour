@@ -44,7 +44,7 @@
         font-size: 18px; } }
   .App .breadcrumb {
     font-size: calc(12px + 2 * ( (100vw - 420px) / 580));
-    padding: 10px 140px; }
+    padding: 20px 140px; }
     @media screen and (max-width: 420px) {
       .App .breadcrumb {
         font-size: 12px; } }

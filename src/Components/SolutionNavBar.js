@@ -12,6 +12,7 @@ class SolutionNavBar extends React.Component {
       <div className="SolutionNavBar">
         {this.props.allSolutions.content.map(solution => {
           return <Image
+            isDetailPage={this.props.isDetailPage}
             id={solution.id}
             source={solution.thumbImage}
             key={solution.id}

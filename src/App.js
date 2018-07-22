@@ -85,12 +85,6 @@ class App extends Component {
           </div>
         }
 
-        {isDetailPage &&
-          <div className="breadcrumb">
-            Tour Homepage > <a onClick={() => this.goToLandingPage() }>{filter}</a>
-          </div>
-        }
-
         <div className="nav-bar">
           <SolutionNavBarWrapper
             allSolutions={this.state.solutions}
@@ -101,6 +95,12 @@ class App extends Component {
           />
         </div>
 
+        {isDetailPage &&
+          <div className="breadcrumb">
+            Tour Homepage > <a onClick={() => this.goToLandingPage() }>{filter}</a>
+          </div>
+        }
+
         {!isDetailPage &&
           <div className="landing-page-content">
             Landing page copy: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -108,30 +108,30 @@ class App extends Component {
         }
 
         {/* Mapping each content.url to a React-Router route */}
-        <div className="show detail-page-content">
-          <Switch>
-            {this.state.solutions.content.filter(content => {
-              return content.categories.includes(filter)
-            }).map((content, index) => {
-              return <Route
-                        key={index}
-                        exact path={`/${content.url}`}
-                        render={(props) => <Solution {...props} currentSolution={content} />}
-                      />
-            })}
+        {isDetailPage &&
+            <Switch>
+              {this.state.solutions.content.filter(content => {
+                return content.categories.includes(filter)
+              }).map((content, index) => {
+                return <Route
+                          key={index}
+                          exact path={`/${content.url}`}
+                          render={(props) => <Solution {...props} currentSolution={content} />}
+                        />
+              })}
 
-            {/* {this.state.solutions.categories.filter(category => {
-              category.title == filter;
-            }).map(category => {
-              return <Route
-                        exact path={`/${category.title}`}
-                        render={(props) => <Solution {...props}  />}
-                      />
-            })} */}
-            {/* <Route exact path="/" component={Home} /> */}
-            {/* <Route path='/' component={App} /> */}
-          </Switch>
-        </div>
+              {/* {this.state.solutions.categories.filter(category => {
+                category.title == filter;
+              }).map(category => {
+                return <Route
+                          exact path={`/${category.title}`}
+                          render={(props) => <Solution {...props}  />}
+                        />
+              })} */}
+              {/* <Route exact path="/" component={Home} /> */}
+              {/* <Route path='/' component={App} /> */}
+            </Switch>
+        }
       </div>
     );
   }

@@ -7,7 +7,7 @@
   font-weight: 300;
 
   .landing-page-header {
-    margin: 30px 140px;
+    margin: 30px $sideMargin;
   }
 
   .landing-page {
@@ -30,7 +30,7 @@
 
   .breadcrumb {
     @include fluid-type(12px, 14px);
-    padding: 10px 140px;
+    padding: 20px $sideMargin;
 
     a {
       text-decoration: underline;
@@ -40,12 +40,12 @@
 
   .landing-page-content {
     @include fluid-type(14px, 18px);
-    padding: 30px 140px;
+    padding: 30px $sideMargin;
   }
 
   .detail-page-content {
     @include fluid-type(14px, 18px);
-    padding: 30px 140px;
+    padding: 30px $sideMargin;
   }
 
 }

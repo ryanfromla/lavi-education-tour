@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "AAAA,yBAA0B;EACxB,MAAM,EAAE,QAAQ",
-"sources": ["../scss/IndividualContentWrapper.scss"],
+"mappings": "AAAQ,kFAA0E;;;;ACGlF,yBAA0B;EACxB,MAAM,EAAE,OAAO;EAIf,yCAAgB;IACd,SAAS,EAAE,KAAK;IAChB,MAAM,ECSY,KAAK",
+"sources": ["../scss/globals/fonts.scss","../scss/IndividualContentWrapper.scss","../scss/globals/vars.scss"],
 "names": [],
 "file": "IndividualContentWrapper.css"
 }
