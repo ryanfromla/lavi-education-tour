@@ -17,9 +17,6 @@
     margin: 0px 140px;
   }
 
-  .smallImages {
-    max-height: $bigImageSize;
-  }
 
   .bigImage, .bigImage img {
     float: left;
@@ -33,7 +30,6 @@
     color: $white;
   }
   .carousel-button {
-
     color: $white;
     &.button-left {
       margin: auto -120px auto 120px;
@@ -42,8 +38,16 @@
     }
     &.button-right {
       margin: auto 120px auto -120px;
-
     }
   }
-
+  &.single-row {
+    .smallImages {
+      max-height: $smallImageSize;
+    }
+  }
+  &.double-row {
+    .smallImages {
+      max-height: $bigImageSize;
+    }
+  }
 }

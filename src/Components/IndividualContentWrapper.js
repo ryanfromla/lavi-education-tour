@@ -1,9 +1,8 @@
 import React from 'react';
 import { withRouter } from 'react-router';
-
 import MainSolutionTitle from './MainSolutionTitle';
 import Paragraph from './Paragraph';
-
+import './../styles/css/IndividualContentWrapper.css';
 
 
 class IndividualContentWrapper extends React.Component {
@@ -12,15 +11,15 @@ class IndividualContentWrapper extends React.Component {
   }
 
   render() {
-    
+
     return (
-      <div className='individual-content-wrapper'>
+      <div className='IndividualContentWrapper'>
         <div>
           CURRENT SOLUTION IMAGE:
           <img src={this.props.currentSolution.homeImage} />
         </div>
         <div>
-          CURRENT SOLUTION TITLE: 
+          CURRENT SOLUTION TITLE:
           <MainSolutionTitle title={this.props.currentSolution.title} />
         </div>
 

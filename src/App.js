@@ -8,14 +8,23 @@ import './styles/css/App.css';
 class App extends Component {
   constructor(props) {
     super(props);
+    let isDetailPage = true;
+
+    if (typeof window === 'object') {
+      console.log(window.location);
+      if (window.location.pathname === '/') {
+        isDetailPage = false;
+      }
+    }
     this.state = {
       solutions: solutions[0],
-      isDetailPage: false,
+      isDetailPage,
     }
     this.changeClassNameToShow = this.changeClassNameToShow.bind(this);
     this.changeClassNameToHide = this.changeClassNameToHide.bind(this);
     this.handleChangeOnClick = this.handleChangeOnClick.bind(this);
     this.goToLandingPage = this.goToLandingPage.bind(this);
+    this.setDetailPage = this.setDetailPage.bind(this);
   }
 
   changeClassNameToShow() {
@@ -53,6 +62,12 @@ class App extends Component {
     this.setState(items);
   }
 
+  setDetailPage() {
+    let items = Object.assign({}, this.state);
+    items.isDetailPage = true;
+    this.setState(items);
+  }
+
   render() {
     let filter = "Bookstore";
     let isDetailPage = this.state.isDetailPage;
@@ -87,7 +102,7 @@ class App extends Component {
         </div>
 
         {!isDetailPage &&
-          <div className="show landing-page-content">
+          <div className="landing-page-content">
             Landing page copy: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </div>
         }

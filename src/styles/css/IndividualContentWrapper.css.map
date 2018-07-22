@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,yBAA0B;EACxB,MAAM,EAAE,QAAQ",
+"sources": ["../scss/IndividualContentWrapper.scss"],
+"names": [],
+"file": "IndividualContentWrapper.css"
+}

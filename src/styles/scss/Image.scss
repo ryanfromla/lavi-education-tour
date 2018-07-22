@@ -16,12 +16,14 @@
     width: $smallImageSize;
     height: $smallImageSize;
     margin: -250px 0 0 0;
+    pointer-events: none;
   }
   .image-title {
     background: $shadowTransparency;
     color: $white;
     z-index: 100;
-    margin: calc(#{$smallImageSize} - 40px) 0px 0 0px;
+    position: absolute;
+    top: calc(#{$smallImageSize} - 40px);
     @include fluid-type(12px, 14px);
     font-weight: 300;
     text-align: center;
@@ -34,10 +36,12 @@
   .image-description {
     @include fluid-type(12px, 12px);
     font-weight: 300;
-    margin: 40px 10px 0 10px;
+    position: absolute;
+    width: $smallImageSize;
+    max-height: calc(#{$smallImageSize} - 20%);
+    top: 40px;
     text-align: center;
     z-index: 100;
     color: $white;
-
   }
 }

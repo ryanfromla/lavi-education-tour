@@ -11,27 +11,42 @@ class SolutionNavBarWrapper extends React.Component {
   }
 
   render() {
+    // You can destructure props like this.
+    let { isDetailPage,
+          allSolutions,
+          changeClassNameToShow,
+          changeClassNameToHide,
+          handleChangeOnClick,
+          toggleDivClassName
+        } = this.props;
+
+    // @TODO get length of solutions.
     let width = ((18/2 * 250) + 290);
+    if (isDetailPage) {
+      width = ((18 * 250) + 75);
+    }
 
     return (
-      <div className="SolutionNavBarWrapper carousel">
+      <div className={`SolutionNavBarWrapper carousel ${isDetailPage ? 'single-row' : 'double-row'}`}>
         <div className="carousel-button button-left">l</div>
         <div className="wrapper">
           <div className="scroll-arrow">a</div>
           <div className="scroll"  style={{width:width+'px'}}>
-            <div className="bigImage">
-              <MainImage
-                img={this.props.allSolutions.categories[0].thumbImage}
-                changeClassNameToShow={this.props.changeClassNameToShow}
-                handleChangeOnClick={this.props.handleChangeOnClick}
-              />
-            </div>
+            {!isDetailPage &&
+                <div className="bigImage">
+                  <MainImage
+                    img={allSolutions.categories[0].thumbImage}
+                    changeClassNameToShow={changeClassNameToShow}
+                    handleChangeOnClick={handleChangeOnClick}
+                  />
+                </div>
+            }
             <div className="smallImages">
               <SolutionNavBar
-                allSolutions={this.props.allSolutions}
-                changeClassNameToHide={this.props.changeClassNameToHide}
-                handleChangeOnClick={this.props.handleChangeOnClick}
-                toggleDivClassName={this.props.toggleDivClassName}
+                allSolutions={allSolutions}
+                changeClassNameToHide={changeClassNameToHide}
+                handleChangeOnClick={handleChangeOnClick}
+                toggleDivClassName={toggleDivClassName}
               />
             </div>
           </div>
