@@ -9,21 +9,22 @@ class SolutionNavBarWrapper extends React.Component {
   constructor(props) {
     super(props);
   }
-  
+
   render() {
 
     let width = (18/2 * 150 + 680);
-    
+
     return (
       <div className="carousel">
         <div className="wrapper" style={{width:width+'px'}}>
           <div className="bigImage">
-            <MainImage 
+            <MainImage
               img={this.props.allSolutions.categories[0].thumbImage}
               changeClassNameToShow={this.props.changeClassNameToShow}
+              handleChangeOnClick={this.props.handleChangeOnClick}
             />
           </div>
-          <div className="smallImages"> 
+          <div className="smallImages">
             <SolutionNavBar
               allSolutions={this.props.allSolutions}
               changeClassNameToHide={this.props.changeClassNameToHide}
