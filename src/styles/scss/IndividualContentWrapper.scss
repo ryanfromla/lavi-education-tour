@@ -3,18 +3,54 @@
 
 .IndividualContentWrapper {
   margin: 0px 0px;
-  .solution-title {
+  background: $white;
 
+  .solution-title {
+    @include fluid-type(20px, 36px);
+    margin-bottom: 30px;
   }
   .solution-image {
-    max-width: 900px;
+    img {
+      max-width: 920px;
+      max-height: 578px;
+    }
     height: $solutionImageHeight;
-
+  }
+  .solution-content-container {
+    display: flex;
+    flex-direction: row;
+    padding: 30px 100px 60px 100px;
+  }
+  .solution-content {
+    width: 470px;
+  }
+  .key-benefits-title {
+    color: $mediumDarkGray;
+    @include fluid-type(18px, 24px);
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .key-benefits {
+    padding: 40px;
+    background: $lightGray;
+    margin-left: 40px;
+    width: 250px;
+  }
+  .banner-image {
+    margin: 30px auto;
+    text-align: center;
   }
   .paragraph {
 
   }
   .content-images {
-
+    margin-top: 60px;
+    border-top: 1px solid $black;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    .content-image {
+      width: $smallImageSize;
+    }
   }
 }

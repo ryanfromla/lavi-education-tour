@@ -14,8 +14,9 @@
     @include fluid-type(14px, 16px);
   }
 
-  .detail-page {
+  &.detail-page {
     @include fluid-type(14px, 16px);
+    background-color: $lightGray;
   }
 
   .page-title {
@@ -30,7 +31,7 @@
 
   .breadcrumb {
     @include fluid-type(12px, 14px);
-    padding: 20px $sideMargin;
+    padding: 20px 260px;
 
     a {
       text-decoration: underline;

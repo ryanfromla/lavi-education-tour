@@ -184,6 +184,7 @@ var solutions = [
 		"id": "0",
 		"url": "bookstore",
 				"title":"Solution 1",
+        "bannerImage":"https://www.lavi.com/upload/CustomFiles/education/img/in-queue.jpg",
 				"description":"description 1",
 				"categories":["Bookstore"],
 				"homeImage":"http://ponyzone.us/wp-content/uploads/2018/01/bathroom-led-light-fixtures-over-mirror-house-decorations-regarding-proportions-1200-x-750.jpg",
@@ -211,6 +212,16 @@ var solutions = [
 							//}
 						}
 					],
+          "keyBenefits": [
+              {
+                "icon": "http://via.placeholder.com/150x150",
+                "text": "Decrease wait times",
+              },
+              {
+                "icon": "http://via.placeholder.com/150x150",
+                "text": "Facilitate customer throughput",
+              }
+          ],
 					"form":{
 						"link":"pardot address",
 						"fields":{
@@ -224,6 +235,7 @@ var solutions = [
 			{
 		"id": "1",
 		"title":"Solution 2",
+    "bannerImage":"https://www.lavi.com/upload/CustomFiles/education/img/in-queue.jpg",
 		"url": "digitalsign",
 		"description":"description 2",
 				"categories":["Bookstore", "Stadium", "Restaurant"],
@@ -252,6 +264,16 @@ var solutions = [
 							//}
 						}
 					],
+          "keyBenefits": [
+              {
+                "icon": "http://via.placeholder.com/150x150",
+                "text": "Decrease wait times",
+              },
+              {
+                "icon": "http://via.placeholder.com/150x150",
+                "text": "Facilitate customer throughput",
+              }
+          ],
 					"form":{
 						"link":"pardot address",
 						"fields":{
@@ -265,6 +287,7 @@ var solutions = [
 		{
 		"id": "2",
 		"title":"Solution 3",
+    "bannerImage":"https://www.lavi.com/upload/CustomFiles/education/img/in-queue.jpg",
 		"url": "electronicqueue",
 		"description":"description 3",
 				"categories":["Bookstore", "Stadium", "Restaurant"],
@@ -293,6 +316,16 @@ var solutions = [
 							//}
 						}
 					],
+          "keyBenefits": [
+              {
+                "icon": "http://via.placeholder.com/150x150",
+                "text": "Decrease wait times",
+              },
+              {
+                "icon": "http://via.placeholder.com/150x150",
+                "text": "Facilitate customer throughput",
+              }
+          ],
 					"form":{
 						"link":"pardot address",
 						"fields":{
@@ -306,6 +339,7 @@ var solutions = [
 		{
 		"id": "3",
 		"title":"Solution 4",
+    "bannerImage":"https://www.lavi.com/upload/CustomFiles/education/img/in-queue.jpg",
 		"url": "inqueue",
 		"description":"description 4",
 				"categories":["Bookstore", "Stadium", "Restaurant"],
@@ -334,6 +368,16 @@ var solutions = [
 							//}
 						}
 					],
+          "keyBenefits": [
+              {
+                "icon": "http://via.placeholder.com/150x150",
+                "text": "Decrease wait times",
+              },
+              {
+                "icon": "http://via.placeholder.com/150x150",
+                "text": "Facilitate customer throughput",
+              }
+          ],
 					"form":{
 						"link":"pardot address",
 						"fields":{
@@ -347,6 +391,7 @@ var solutions = [
 		{
 		"id": "4",
 		"title":"Solution 5",
+    "bannerImage":"https://www.lavi.com/upload/CustomFiles/education/img/in-queue.jpg",
 		"url": "instore",
 		"description":"description 5",
 				"categories":["Bookstore", "Stadium", "Restaurant"],
@@ -375,6 +420,16 @@ var solutions = [
 							//}
 						}
 					],
+          "keyBenefits": [
+              {
+                "icon": "http://via.placeholder.com/150x150",
+                "text": "Decrease wait times",
+              },
+              {
+                "icon": "http://via.placeholder.com/150x150",
+                "text": "Facilitate customer throughput",
+              }
+          ],
 					"form":{
 						"link":"pardot address",
 						"fields":{
@@ -388,6 +443,7 @@ var solutions = [
 		{
 		"id": "5",
 		"title":"Solution 6",
+    "bannerImage":"https://www.lavi.com/upload/CustomFiles/education/img/in-queue.jpg",
 		"url": "checkoutqueue",
 		"description":"description 6",
 				"categories":["Bookstore", "Stadium", "Restaurant"],
@@ -416,6 +472,16 @@ var solutions = [
 							//}
 						}
 					],
+          "keyBenefits": [
+              {
+                "icon": "http://via.placeholder.com/150x150",
+                "text": "Decrease wait times",
+              },
+              {
+                "icon": "http://via.placeholder.com/150x150",
+                "text": "Facilitate customer throughput",
+              }
+          ],
 					"form":{
 						"link":"pardot address",
 						"fields":{
@@ -429,6 +495,7 @@ var solutions = [
 		{
 		"id": "6",
 		"title":"Solution 7",
+    "bannerImage":"https://www.lavi.com/upload/CustomFiles/education/img/in-queue.jpg",
 		"url": "teamspirit",
 		"description":"description 7",
 				"categories":["Bookstore", "Stadium", "Restaurant"],
@@ -457,6 +524,16 @@ var solutions = [
 							//}
 						}
 					],
+          "keyBenefits": [
+              {
+                "icon": "http://via.placeholder.com/150x150",
+                "text": "Decrease wait times",
+              },
+              {
+                "icon": "http://via.placeholder.com/150x150",
+                "text": "Facilitate customer throughput",
+              }
+          ],
 					"form":{
 						"link":"pardot address",
 						"fields":{
@@ -470,6 +547,7 @@ var solutions = [
 		{
 		"id": "7",
 		"title":"Solution 8",
+    "bannerImage":"https://www.lavi.com/upload/CustomFiles/education/img/in-queue.jpg",
 		"url": "8",
 		"description":"description 8",
 				"categories":["Bookstore", "Stadium", "Restaurant"],
@@ -498,6 +576,16 @@ var solutions = [
 							//}
 						}
 					],
+          "keyBenefits": [
+              {
+                "icon": "http://via.placeholder.com/150x150",
+                "text": "Decrease wait times",
+              },
+              {
+                "icon": "http://via.placeholder.com/150x150",
+                "text": "Facilitate customer throughput",
+              }
+          ],
 					"form":{
 						"link":"pardot address",
 						"fields":{
@@ -511,6 +599,7 @@ var solutions = [
 		{
 		"id": "8",
 		"title":"Solution 9",
+    "bannerImage":"https://www.lavi.com/upload/CustomFiles/education/img/in-queue.jpg",
 		"url": "9",
 		"description":"description 9",
 				"categories":["Bookstore", "Stadium", "Restaurant"],
@@ -539,6 +628,16 @@ var solutions = [
 							//}
 						}
 					],
+          "keyBenefits": [
+              {
+                "icon": "http://via.placeholder.com/150x150",
+                "text": "Decrease wait times",
+              },
+              {
+                "icon": "http://via.placeholder.com/150x150",
+                "text": "Facilitate customer throughput",
+              }
+          ],
 					"form":{
 						"link":"pardot address",
 						"fields":{
@@ -552,6 +651,7 @@ var solutions = [
 		{
 		"id": "9",
 		"title":"Solution 10",
+    "bannerImage":"https://www.lavi.com/upload/CustomFiles/education/img/in-queue.jpg",
 		"url": "10",
 		"description":"description 10",
 				"categories":["Bookstore", "Stadium", "Restaurant"],
@@ -580,6 +680,16 @@ var solutions = [
 							//}
 						}
 					],
+          "keyBenefits": [
+              {
+                "icon": "http://via.placeholder.com/150x150",
+                "text": "Decrease wait times",
+              },
+              {
+                "icon": "http://via.placeholder.com/150x150",
+                "text": "Facilitate customer throughput",
+              }
+          ],
 					"form":{
 						"link":"pardot address",
 						"fields":{
@@ -593,6 +703,7 @@ var solutions = [
 		{
 		"id": "10",
 		"title":"Solution 11",
+    "bannerImage":"https://www.lavi.com/upload/CustomFiles/education/img/in-queue.jpg",
 		"url": "11",
 		"description":"description 11",
 				"categories":["Bookstore", "Stadium", "Restaurant"],
@@ -634,6 +745,7 @@ var solutions = [
 		{
 		"id": "11",
 		"title":"Solution 12",
+    "bannerImage":"https://www.lavi.com/upload/CustomFiles/education/img/in-queue.jpg",
 		"url": "12",
 		"description":"description 12",
 				"categories":["Bookstore", "Stadium", "Restaurant"],
@@ -675,6 +787,7 @@ var solutions = [
 		{
 		"id": "12",
 		"title":"Solution 13",
+    "bannerImage":"https://www.lavi.com/upload/CustomFiles/education/img/in-queue.jpg",
 		"url": "13",
 		"description":"description 13",
 				"categories":["Bookstore", "Stadium", "Restaurant"],
@@ -716,6 +829,7 @@ var solutions = [
 		{
 		"id": "13",
 		"title":"Solution 14",
+    "bannerImage":"https://www.lavi.com/upload/CustomFiles/education/img/in-queue.jpg",
 		"url": "14",
 		"description":"description 14",
 				"categories":["Bookstore", "Stadium", "Restaurant"],
@@ -757,6 +871,7 @@ var solutions = [
 		{
 		"id": "14",
 		"title":"Solution 15",
+    "bannerImage":"https://www.lavi.com/upload/CustomFiles/education/img/in-queue.jpg",
 		"url": "15",
 		"description":"description 15",
 				"categories":["Bookstore", "Stadium", "Restaurant"],
@@ -798,6 +913,7 @@ var solutions = [
 		{
 		"id": "15",
 		"title":"Solution 16",
+    "bannerImage":"https://www.lavi.com/upload/CustomFiles/education/img/in-queue.jpg",
 		"url": "16",
 		"description":"description 16",
 				"categories":["Bookstore", "Stadium", "Restaurant"],
@@ -839,6 +955,7 @@ var solutions = [
 		{
 		"id": "16",
 		"title":"Solution 17",
+    "bannerImage":"https://www.lavi.com/upload/CustomFiles/education/img/in-queue.jpg",
 		"url": "17",
 		"description":"description 17",
 				"categories":["Bookstore", "Stadium", "Restaurant"],
@@ -880,6 +997,7 @@ var solutions = [
 		{
 		"id": "17",
 		"title":"Solution 18",
+    "bannerImage":"https://www.lavi.com/upload/CustomFiles/education/img/in-queue.jpg",
 		"url": "18",
 		"description":"description 18",
 				"categories":["Bookstore", "Stadium", "Restaurant"],

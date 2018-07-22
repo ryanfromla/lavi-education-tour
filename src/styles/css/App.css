@@ -16,13 +16,14 @@
     @media screen and (min-width: 1000px) {
       .App .landing-page {
         font-size: 16px; } }
-  .App .detail-page {
-    font-size: calc(14px + 2 * ( (100vw - 420px) / 580)); }
+  .App.detail-page {
+    font-size: calc(14px + 2 * ( (100vw - 420px) / 580));
+    background-color: #E4E4E4; }
     @media screen and (max-width: 420px) {
-      .App .detail-page {
+      .App.detail-page {
         font-size: 14px; } }
     @media screen and (min-width: 1000px) {
-      .App .detail-page {
+      .App.detail-page {
         font-size: 16px; } }
   .App .page-title {
     font-size: calc(20px + 16 * ( (100vw - 420px) / 580));
@@ -44,7 +45,7 @@
         font-size: 18px; } }
   .App .breadcrumb {
     font-size: calc(12px + 2 * ( (100vw - 420px) / 580));
-    padding: 20px 140px; }
+    padding: 20px 260px; }
     @media screen and (max-width: 420px) {
       .App .breadcrumb {
         font-size: 12px; } }
