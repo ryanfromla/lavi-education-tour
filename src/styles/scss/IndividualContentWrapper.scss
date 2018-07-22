@@ -33,8 +33,15 @@
   .key-benefits {
     padding: 40px;
     background: $lightGray;
-    margin-left: 40px;
+  }
+
+  .sidebar {
     width: 250px;
+    margin-left: 40px;
+  }
+
+  .solution-navigation {
+    margin: 30px 0;
   }
   .banner-image {
     margin: 30px auto;
@@ -49,8 +56,11 @@
     padding-top: 10px;
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
+    align-content: flex-start;
     .content-image {
-      width: $smallImageSize;
+      width: $smallestImageSize;
+      margin-right: 10px;
     }
   }
 }

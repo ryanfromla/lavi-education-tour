@@ -24,7 +24,7 @@ class SolutionNavBarWrapper extends React.Component {
     let smallImage = 250;
     let smallestImage = 150;
     let numberSolutions = 18;
-    let width = ((numberSolutions/2 * smallImage) + 290); // The padding is from the image + the border widths (probably)
+    let width = ((numberSolutions/2 * smallImage) + 545); // The padding is from the image + the border widths (probably)
     if (isDetailPage) {
       width = ((numberSolutions * smallestImage) + 75);
     }

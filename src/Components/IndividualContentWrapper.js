@@ -30,7 +30,8 @@ class IndividualContentWrapper extends React.Component {
             </div>
 
             {/* Map paragraphs for single solution and return Paragraph components */}
-            {this.props.currentSolution.content.paragraphs.map((paragraph, index) => {
+            {this.props.currentSolution.content.paragraphs !== undefined &&
+             this.props.currentSolution.content.paragraphs.map((paragraph, index) => {
               return <div key={index} className='paragraph'>
                         <Paragraph text={paragraph} />
                       </div>
@@ -38,7 +39,8 @@ class IndividualContentWrapper extends React.Component {
 
             <div className="content-images">
               {/* Map paragraphs for single solution and return <imgs> wrapped in <divs> */}
-              {this.props.currentSolution.content.images.map((image, index) => {
+              {this.props.currentSolution.content.images !== undefined &&
+               this.props.currentSolution.content.images.map((image, index) => {
                 return <div key={index} className='content-image'>
                           <img src={image.path} />
                         </div>
@@ -46,13 +48,21 @@ class IndividualContentWrapper extends React.Component {
             </div>
           </div>
 
-          <div className="key-benefits">
-            <div className="key-benefits-title">Key Benefits</div>
-            {this.props.currentSolution.content.keyBenefits.map((item, index) => {
-              return <div key={index} className='paragraph'>
-                        <Benefit text={item.text} icon={item.icon} />
-                      </div>
-            })}
+          <div className="sidebar">
+            <div className="key-benefits">
+              <div className="key-benefits-title">Key Benefits</div>
+              {this.props.currentSolution.content.keyBenefits !== undefined &&
+               this.props.currentSolution.content.keyBenefits.map((item, index) => {
+                return <div key={index} className='paragraph'>
+                          <Benefit text={item.text} icon={item.icon} />
+                        </div>
+              })}
+            </div>
+
+            <div className="solution-navigation">
+              <a href={this.props.previousSolution()}>Previous Solution</a>
+              <a href={this.props.nextSolution()}>Next Solution</a>
+            </div>
           </div>
 
         </div>

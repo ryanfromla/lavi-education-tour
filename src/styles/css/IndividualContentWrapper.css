@@ -38,9 +38,12 @@
         font-size: 24px; } }
   .IndividualContentWrapper .key-benefits {
     padding: 40px;
-    background: #E4E4E4;
-    margin-left: 40px;
-    width: 250px; }
+    background: #E4E4E4; }
+  .IndividualContentWrapper .sidebar {
+    width: 250px;
+    margin-left: 40px; }
+  .IndividualContentWrapper .solution-navigation {
+    margin: 30px 0; }
   .IndividualContentWrapper .banner-image {
     margin: 30px auto;
     text-align: center; }
@@ -49,8 +52,11 @@
     border-top: 1px solid #000000;
     padding-top: 10px;
     display: flex;
-    flex-direction: row; }
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: flex-start; }
     .IndividualContentWrapper .content-images .content-image {
-      width: 250px; }
+      width: 150px;
+      margin-right: 10px; }
 
 /*# sourceMappingURL=IndividualContentWrapper.css.map */

@@ -9,22 +9,42 @@ class App extends Component {
   constructor(props) {
     super(props);
     let isDetailPage = true;
-
-    if (typeof window === 'object') {
-      console.log(window.location);
-      if (window.location.pathname === '/') {
-        isDetailPage = false;
-      }
-    }
     this.state = {
       solutions: solutions[0],
-      isDetailPage,
+      isDetailPage: false,
+      filter: "Bookstore"
     }
     this.changeClassNameToShow = this.changeClassNameToShow.bind(this);
     this.changeClassNameToHide = this.changeClassNameToHide.bind(this);
     this.handleChangeOnClick = this.handleChangeOnClick.bind(this);
     this.goToLandingPage = this.goToLandingPage.bind(this);
     this.setDetailPage = this.setDetailPage.bind(this);
+    this.previousSolution = this.previousSolution.bind(this);
+    this.nextSolution = this.nextSolution.bind(this);
+    this.getUrlForID = this.getUrlForID.bind(this);
+  }
+  componentDidMount() {
+    let isDetailPage = false;
+    let currentSolution;
+    let filter = "Bookstore";
+
+    if (typeof window === 'object') {
+      if (window.location.pathname === '/') {
+        isDetailPage = false;
+      } else {
+        isDetailPage = true;
+        currentSolution = this.state.solutions.content.filter(content => {
+          return content.categories.includes(filter)
+        }).filter((content, index) => {
+          return '/'+content.url === window.location.pathname
+        })[0];
+        // console.log('cs', currentSolution);
+      }
+    }
+    let items = Object.assign({}, this.state);
+    items.isDetailPage = isDetailPage;
+    items.currentSolution = currentSolution;
+    this.setState(items);
   }
 
   changeClassNameToShow() {
@@ -43,7 +63,6 @@ class App extends Component {
 
   handleChangeOnClick(id) {
     let isDetailPage = false;
-    // console.log('click', solutions[0].content[id]);
     if (solutions[0].content[id] === undefined) {
       isDetailPage = false;
     } else {
@@ -52,7 +71,17 @@ class App extends Component {
     let items = Object.assign({}, this.state);
     items.currentSolution = solutions[0].content[id];
     items.isDetailPage = isDetailPage;
-    this.setState(items, () => console.log(this.state.isDetailPage));
+    this.setState(items);
+  }
+
+  getUrlForID(id) {
+    console.log('url', id);
+    if (solutions[0].content[id] === undefined) {
+      return '/';
+    } else {
+      console.log(solutions[0].content[id].url);
+      return solutions[0].content[id].url;
+    }
   }
 
   goToLandingPage() {
@@ -66,6 +95,33 @@ class App extends Component {
     let items = Object.assign({}, this.state);
     items.isDetailPage = true;
     this.setState(items);
+  }
+
+  previousSolution() {
+    console.log(this.state.currentSolution);
+    if (this.state.currentSolution !== undefined) {
+      let id = Number(this.state.currentSolution.id);
+      if (id >= 0) {
+        return this.getUrlForID(id - 1);
+      } else {
+        return this.getUrlForID(0);
+      }
+    }
+    return '/';
+  }
+
+  nextSolution() {
+    console.log('ns', this.state.currentSolution);
+    if (this.state.currentSolution !== undefined) {
+      let id = Number(this.state.currentSolution.id);
+      console.log('nsid', id);
+      if (id <= solutions[0].content.length) {
+        return this.getUrlForID(id + 1);
+      } else {
+        return this.getUrlForID(0);
+      }
+    }
+    return '/';
   }
 
   render() {
@@ -116,7 +172,12 @@ class App extends Component {
                 return <Route
                           key={index}
                           exact path={`/${content.url}`}
-                          render={(props) => <Solution {...props} currentSolution={content} />}
+                          render={(props) => <Solution
+                            {...props}
+                            currentSolution={content}
+                            previousSolution={this.previousSolution}
+                            nextSolution={this.nextSolution}
+                          />}
                         />
               })}
 

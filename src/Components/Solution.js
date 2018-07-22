@@ -19,6 +19,8 @@ class Solution extends React.Component {
       <div className="Solution">
         <IndividualContentWrapper
           currentSolution={this.props.currentSolution}
+          previousSolution={this.props.previousSolution}
+          nextSolution={this.props.nextSolution}
         />
       </div>
     );
