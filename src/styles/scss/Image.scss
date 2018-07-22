@@ -1,0 +1,28 @@
+@import './globals/vars.scss';
+@import './globals/mixins.scss';
+
+.Images {
+  width: $smallImageSize;
+  height: $smallImageSize;
+  margin: 2px 2px;
+
+  background-color: $white;
+  img {
+    width: $smallImageSize;
+    height: $smallImageSize;
+  }
+  .image-title-overlay {
+
+    margin: -60px;
+    height: 60px;
+    background: $shadowTransparency;
+    color: $white;
+    z-index: 100;
+  }
+  .image-description {
+    @include fluid-type(12px, 14px);
+    margin: -100px;
+    z-index: 100;
+    color: $white;
+  }
+}

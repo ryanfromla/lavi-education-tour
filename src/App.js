@@ -51,7 +51,7 @@ class App extends Component {
     let isDetailPage = this.state.isDetailPage;
 
     return (
-      <div className={isDetailPage ? 'detail-page' : 'landing-page'}>
+      <div className={`App ${isDetailPage ? 'detail-page' : 'landing-page'} `}>
         {!isDetailPage &&
           <div className="landing-page-header">
             <div className="show page-title">

@@ -1,0 +1,22 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800);
+/* Scalable padding */
+/* Scalable padding, all positions */
+/* Scalable margins */
+.SolutionNavBarWrapper.carousel {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  max-height: 400px; }
+.SolutionNavBarWrapper .wrapper {
+  overflow-y: hidden;
+  background-color: #FFFFFF;
+  /* width: 2030px;  */ }
+.SolutionNavBarWrapper .smallImages {
+  max-height: 400px; }
+.SolutionNavBarWrapper .bigImage, .SolutionNavBarWrapper .bigImage img {
+  float: left;
+  margin: 2px 4px 2px 2px;
+  height: 400px;
+  width: 400px; }
+
+/*# sourceMappingURL=SolutionNavBarWrapper.css.map */

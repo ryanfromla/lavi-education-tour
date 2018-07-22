@@ -1,5 +1,6 @@
 import React from 'react';
-import Images from './Images.js';
+import Image from './Image.js';
+import './../styles/css/SolutionNavBar.css';
 
 class SolutionNavBar extends React.Component {
   constructor(props) {
@@ -7,13 +8,10 @@ class SolutionNavBar extends React.Component {
   }
 
   render() {
-    let style = {
-
-    }
     return(
-      <div className="solution-nav" style={style}>
+      <div className="SolutionNavBar">
         {this.props.allSolutions.content.map(solution => {
-          return <Images
+          return <Image
             id={solution.id}
             source={solution.thumbImage}
             key={solution.id}

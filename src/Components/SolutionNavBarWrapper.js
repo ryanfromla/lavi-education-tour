@@ -3,7 +3,7 @@ import { withRouter } from 'react-router';
 
 import MainImage from './MainImage';
 import SolutionNavBar from './SolutionNavBar';
-import './SolutionNavBarWrapper.css';
+import './../styles/css/SolutionNavBarWrapper.css';
 
 class SolutionNavBarWrapper extends React.Component {
   constructor(props) {
@@ -15,7 +15,7 @@ class SolutionNavBarWrapper extends React.Component {
     let width = (18/2 * 150 + 680);
 
     return (
-      <div className="carousel">
+      <div className="SolutionNavBarWrapper carousel ">
         <div className="wrapper" style={{width:width+'px'}}>
           <div className="bigImage">
             <MainImage

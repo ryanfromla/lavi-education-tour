@@ -1,0 +1,31 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800);
+/* Scalable padding */
+/* Scalable padding, all positions */
+/* Scalable margins */
+.Images {
+  width: 200px;
+  height: 200px;
+  margin: 2px 2px;
+  background-color: #FFFFFF; }
+  .Images img {
+    width: 200px;
+    height: 200px; }
+  .Images .image-title-overlay {
+    margin: -60px;
+    height: 60px;
+    background: rgba(102, 107, 117, 0.6);
+    color: #FFFFFF;
+    z-index: 100; }
+  .Images .image-description {
+    font-size: calc(12px + 2 * ( (100vw - 420px) / 580));
+    margin: -100px;
+    z-index: 100;
+    color: #FFFFFF; }
+    @media screen and (max-width: 420px) {
+      .Images .image-description {
+        font-size: 12px; } }
+    @media screen and (min-width: 1000px) {
+      .Images .image-description {
+        font-size: 14px; } }
+
+/*# sourceMappingURL=Image.css.map */
