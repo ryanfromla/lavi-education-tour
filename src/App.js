@@ -34,12 +34,16 @@ class App extends Component {
 
   handleChangeOnClick(id) {
     let isDetailPage = false;
-    if (solutions[0].content[id] !== undefined) {
+    console.log('click', solutions[0].content[id]);
+    if (solutions[0].content[id] === undefined) {
       isDetailPage = false;
     } else {
       isDetailPage = true;
     }
-    this.setState({ currentSolution: solutions[0].content[id], isDetailPage }, () => console.log(this.state.currentSolution));
+    let items = Object.assign({}, this.state);
+    items.currentSolution = solutions[0].content[id];
+    items.isDetailPage = isDetailPage;
+    this.setState(items, () => console.log(this.state.isDetailPage));
   }
 
   goToLandingPage() {
@@ -81,7 +85,7 @@ class App extends Component {
 
         {!isDetailPage &&
           <div className="show landing-page-content">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Landing page copy: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </div>
         }
 
