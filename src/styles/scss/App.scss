@@ -38,10 +38,12 @@
 
   .landing-page-content {
     @include fluid-type(14px, 18px);
+    padding: 30px 140px;
   }
 
   .detail-page-content {
     @include fluid-type(14px, 18px);
+    padding: 30px 140px;
   }
 
 }

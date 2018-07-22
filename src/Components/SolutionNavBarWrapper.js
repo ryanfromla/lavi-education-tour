@@ -11,8 +11,7 @@ class SolutionNavBarWrapper extends React.Component {
   }
 
   render() {
-
-    let width = (18/2 * 150 + 680);
+    let width = ((18/2 * 150) + 300);
 
     return (
       <div className="SolutionNavBarWrapper carousel ">

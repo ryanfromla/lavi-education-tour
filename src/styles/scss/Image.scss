@@ -11,18 +11,33 @@
     width: $smallImageSize;
     height: $smallImageSize;
   }
-  .image-title-overlay {
-
-    margin: -60px;
-    height: 60px;
+  .overlay {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    margin: -150px 0 0 0;
+  }
+  .image-title {
     background: $shadowTransparency;
     color: $white;
     z-index: 100;
-  }
-  .image-description {
+    margin: 110px 0px 0 0px;
     @include fluid-type(12px, 14px);
-    margin: -100px;
+    font-weight: 300;
+    text-align: center;
+    z-index: 200;
+    width: $smallImageSize;
+    height: 35px;
+    line-height: 35px;
+  }
+
+  .image-description {
+    @include fluid-type(12px, 12px);
+    font-weight: 300;
+    margin: 40px 10px 0 10px;
+    text-align: center;
     z-index: 100;
     color: $white;
+
   }
 }

@@ -12,11 +12,11 @@
   background-color: #FFFFFF;
   /* width: 2030px;  */ }
 .SolutionNavBarWrapper .smallImages {
-  max-height: 400px; }
+  max-height: 300px; }
 .SolutionNavBarWrapper .bigImage, .SolutionNavBarWrapper .bigImage img {
   float: left;
   margin: 2px 4px 2px 2px;
-  height: 400px;
-  width: 400px; }
+  height: 300px;
+  width: 300px; }
 
 /*# sourceMappingURL=SolutionNavBarWrapper.css.map */

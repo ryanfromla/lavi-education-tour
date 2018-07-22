@@ -27,6 +27,7 @@ class Image extends React.Component {
   render() {
     return (
       <div className="Images">
+
         <img
           id={this.props.title}
           className='content-image'
@@ -35,12 +36,16 @@ class Image extends React.Component {
           alt=""
         />
 
-          {/* THIS span tag contains each image's description */}
-        <div className="image-description"> {this.props.description} </div>
+        <div className="overlay">
+          <div className="image-title">
+            <IndividualSolutionTitle  title={this.props.title} />
+          </div>
 
-        <div className="image-title-overlay">
-          <IndividualSolutionTitle  title={this.props.title} />
+          <div className="image-description">
+            {this.props.description}
+          </div>
         </div>
+
       </div>
     );
   }
