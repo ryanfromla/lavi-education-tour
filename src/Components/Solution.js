@@ -1,6 +1,6 @@
 import React from 'react';
-
 import IndividualContentWrapper from './IndividualContentWrapper.js';
+import './../styles/css/Solution.css';
 
 class Solution extends React.Component {
   constructor(props) {
@@ -16,9 +16,11 @@ class Solution extends React.Component {
     }
 
     return (
-      <div className="container">
+      <div className="Solution">
         <IndividualContentWrapper
           currentSolution={this.props.currentSolution}
+          previousSolution={this.props.previousSolution}
+          nextSolution={this.props.nextSolution}
         />
       </div>
     );

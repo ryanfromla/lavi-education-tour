@@ -7,18 +7,10 @@ class IndividualSolutionTitle extends React.Component {
   }
 
   render() {
-
-    let style = {
-      color: 'rgb(255, 255, 255)',
-      backgroundColor: 'rgba(0, 0, 0, 0.5)',
-      display: 'flex',
-      width: '100%',
-    }
     return(
-     <span style={style}>{this.props.title}</span>
+     <div>{this.props.title}</div>
     );
   }
 }
 
 export default withRouter(IndividualSolutionTitle);
-
